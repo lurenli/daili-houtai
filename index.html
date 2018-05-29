@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
+    <title>会员管理平台</title>
+</head>
+<style>
+    html {
+        width: 100%;
+        height: 100%;
+        /*font-size: 62.5%;*/
+        font-size: calc(10vw / 3.75);
+    }
+    div, image, input, body, html, a, span {
+        box-sizing: border-box;
+    }
+    input{
+        resize: none;
+        outline: none;
+    }
+    input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px white inset;
+        border: 1px solid #CCC!important;
+    }
+    li{list-style: none}
+    *{margin:0;padding:0;}
+   
+</style>
+<body style="min-width: 375px ;width: 100%; overflow-y:scroll;font-family: 'Arial','Microsoft YaHei','黑体','宋体','sans-serif'">
+<div id="content" style="width:100%; height:100%;overflow: hidden">
+</div>
+<script type="text/javascript">
+    var htmlTag = document.getElementsByTagName('html');
+    if (htmlTag) {
+        var fs = window.innerWidth * 10 / 375;
+        console.log("setting font size: " + fs);
+        htmlTag[0].style.fontSize = "" + fs + "px";
+    }
+</script>
+<script type="text/javascript" src="/assets/bundle.js" charset="utf-8"></script>
+</body>
+</html>
